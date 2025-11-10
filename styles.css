@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* Attractive gradient background: soft blue to purple for a music-themed vibe */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed; /* Fixes background during scrolling */
+    color: #fff; /* White text for contrast */
+}
+.player {
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    width: 300px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adds a modern blur effect */
+}
+.info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333; /* Dark text for readability on white background */
+}
+.info p {
+    margin: 5px 0;
+    color: #666;
+}
+.controls {
+    margin: 20px 0;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth hover effect */
+}
+button:hover {
+    background: #0056b3;
+}
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex; /* Use flex for layout */
+    flex-direction: column; /* Vertical stacking like a playlist */
+    gap: 10px; /* Space between boxes */
+}
+.playlist li {
+    padding: 15px;
+    border: 2px solid #ddd; /* Box border */
+    border-radius: 8px; /* Rounded corners for box look */
+    background: #f9f9f9; /* Light background for boxes */
+    cursor: pointer;
+    transition: all 0.3s; /* Smooth hover and active effects */
+    text-align: left; /* Left-align text for playlist feel */
+    font-size: 14px;
+    color: #333;
+}
+.playlist li:hover {
+    background: #e9ecef; /* Lighter on hover */
+    border-color: #007bff; /* Blue border on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+.playlist li.active {
+    background: #007bff; /* Blue background for active song */
+    color: white;
+    border-color: #0056b3;
+}
